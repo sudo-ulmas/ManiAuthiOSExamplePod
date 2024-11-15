@@ -1,6 +1,0 @@
-framework module myid {
-  umbrella header "myid-umbrella.h"
-
-  export *
-  module * { export * }
-}
