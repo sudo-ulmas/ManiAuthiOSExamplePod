@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		713CE472AD991756DC0568AC /* Pods_ManiAuthExampleNoPlugins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 266B95CD8DCA439F4CE3B5B0 /* Pods_ManiAuthExampleNoPlugins.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8E38B9F2CDB759A00C6A6E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8E38B802CDB759800C6A6E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8E38B872CDB759800C6A6E3;
+			remoteInfo = ManiAuthExampleNoPlugins;
+		};
+		B8E38BA92CDB759A00C6A6E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8E38B802CDB759800C6A6E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8E38B872CDB759800C6A6E3;
+			remoteInfo = ManiAuthExampleNoPlugins;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		266B95CD8DCA439F4CE3B5B0 /* Pods_ManiAuthExampleNoPlugins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManiAuthExampleNoPlugins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57A519428315847A4CEC2ACE /* Pods-ManiAuthExampleNoPlugins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManiAuthExampleNoPlugins.release.xcconfig"; path = "Target Support Files/Pods-ManiAuthExampleNoPlugins/Pods-ManiAuthExampleNoPlugins.release.xcconfig"; sourceTree = "<group>"; };
+		B8E38B882CDB759800C6A6E3 /* ManiAuthExampleNoPlugins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManiAuthExampleNoPlugins.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E38B9E2CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManiAuthExampleNoPluginsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E38BA82CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManiAuthExampleNoPluginsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE920F4184F0B52952C263F9 /* Pods-ManiAuthExampleNoPlugins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManiAuthExampleNoPlugins.debug.xcconfig"; path = "Target Support Files/Pods-ManiAuthExampleNoPlugins/Pods-ManiAuthExampleNoPlugins.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B8E38BB02CDB759A00C6A6E3 /* Exceptions for "ManiAuthExampleNoPlugins" folder in "ManiAuthExampleNoPlugins" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B8E38B872CDB759800C6A6E3 /* ManiAuthExampleNoPlugins */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B8E38B8A2CDB759800C6A6E3 /* ManiAuthExampleNoPlugins */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B8E38BB02CDB759A00C6A6E3 /* Exceptions for "ManiAuthExampleNoPlugins" folder in "ManiAuthExampleNoPlugins" target */,
+			);
+			path = ManiAuthExampleNoPlugins;
+			sourceTree = "<group>";
+		};
+		B8E38BA12CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = ManiAuthExampleNoPluginsTests;
+			sourceTree = "<group>";
+		};
+		B8E38BAB2CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = ManiAuthExampleNoPluginsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8E38B852CDB759800C6A6E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				713CE472AD991756DC0568AC /* Pods_ManiAuthExampleNoPlugins.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E38B9B2CDB759A00C6A6E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E38BA52CDB759A00C6A6E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8036CDA6A5A8DBC6E7E03BDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				266B95CD8DCA439F4CE3B5B0 /* Pods_ManiAuthExampleNoPlugins.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8E38B7F2CDB759800C6A6E3 = {
+			isa = PBXGroup;
+			children = (
+				B8E38B8A2CDB759800C6A6E3 /* ManiAuthExampleNoPlugins */,
+				B8E38BA12CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsTests */,
+				B8E38BAB2CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsUITests */,
+				B8E38B892CDB759800C6A6E3 /* Products */,
+				D59B529A2F681FEC9B77178D /* Pods */,
+				8036CDA6A5A8DBC6E7E03BDD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B8E38B892CDB759800C6A6E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8E38B882CDB759800C6A6E3 /* ManiAuthExampleNoPlugins.app */,
+				B8E38B9E2CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsTests.xctest */,
+				B8E38BA82CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D59B529A2F681FEC9B77178D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE920F4184F0B52952C263F9 /* Pods-ManiAuthExampleNoPlugins.debug.xcconfig */,
+				57A519428315847A4CEC2ACE /* Pods-ManiAuthExampleNoPlugins.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8E38B872CDB759800C6A6E3 /* ManiAuthExampleNoPlugins */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E38BB12CDB759A00C6A6E3 /* Build configuration list for PBXNativeTarget "ManiAuthExampleNoPlugins" */;
+			buildPhases = (
+				78EC25870D1E390A053A140D /* [CP] Check Pods Manifest.lock */,
+				B8E38B842CDB759800C6A6E3 /* Sources */,
+				B8E38B852CDB759800C6A6E3 /* Frameworks */,
+				B8E38B862CDB759800C6A6E3 /* Resources */,
+				E90CA0220BC21918B2711580 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B8E38B8A2CDB759800C6A6E3 /* ManiAuthExampleNoPlugins */,
+			);
+			name = ManiAuthExampleNoPlugins;
+			productName = ManiAuthExampleNoPlugins;
+			productReference = B8E38B882CDB759800C6A6E3 /* ManiAuthExampleNoPlugins.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8E38B9D2CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E38BB62CDB759A00C6A6E3 /* Build configuration list for PBXNativeTarget "ManiAuthExampleNoPluginsTests" */;
+			buildPhases = (
+				B8E38B9A2CDB759A00C6A6E3 /* Sources */,
+				B8E38B9B2CDB759A00C6A6E3 /* Frameworks */,
+				B8E38B9C2CDB759A00C6A6E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8E38BA02CDB759A00C6A6E3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B8E38BA12CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsTests */,
+			);
+			name = ManiAuthExampleNoPluginsTests;
+			productName = ManiAuthExampleNoPluginsTests;
+			productReference = B8E38B9E2CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8E38BA72CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E38BB92CDB759A00C6A6E3 /* Build configuration list for PBXNativeTarget "ManiAuthExampleNoPluginsUITests" */;
+			buildPhases = (
+				B8E38BA42CDB759A00C6A6E3 /* Sources */,
+				B8E38BA52CDB759A00C6A6E3 /* Frameworks */,
+				B8E38BA62CDB759A00C6A6E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8E38BAA2CDB759A00C6A6E3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B8E38BAB2CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsUITests */,
+			);
+			name = ManiAuthExampleNoPluginsUITests;
+			productName = ManiAuthExampleNoPluginsUITests;
+			productReference = B8E38BA82CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8E38B802CDB759800C6A6E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					B8E38B872CDB759800C6A6E3 = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
+					};
+					B8E38B9D2CDB759A00C6A6E3 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = B8E38B872CDB759800C6A6E3;
+					};
+					B8E38BA72CDB759A00C6A6E3 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = B8E38B872CDB759800C6A6E3;
+					};
+				};
+			};
+			buildConfigurationList = B8E38B832CDB759800C6A6E3 /* Build configuration list for PBXProject "ManiAuthExampleNoPlugins" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8E38B7F2CDB759800C6A6E3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B8E38B892CDB759800C6A6E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8E38B872CDB759800C6A6E3 /* ManiAuthExampleNoPlugins */,
+				B8E38B9D2CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsTests */,
+				B8E38BA72CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8E38B862CDB759800C6A6E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E38B9C2CDB759A00C6A6E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E38BA62CDB759A00C6A6E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78EC25870D1E390A053A140D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ManiAuthExampleNoPlugins-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E90CA0220BC21918B2711580 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ManiAuthExampleNoPlugins/Pods-ManiAuthExampleNoPlugins-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ManiAuthExampleNoPlugins/Pods-ManiAuthExampleNoPlugins-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ManiAuthExampleNoPlugins/Pods-ManiAuthExampleNoPlugins-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8E38B842CDB759800C6A6E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E38B9A2CDB759A00C6A6E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E38BA42CDB759A00C6A6E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8E38BA02CDB759A00C6A6E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8E38B872CDB759800C6A6E3 /* ManiAuthExampleNoPlugins */;
+			targetProxy = B8E38B9F2CDB759A00C6A6E3 /* PBXContainerItemProxy */;
+		};
+		B8E38BAA2CDB759A00C6A6E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8E38B872CDB759800C6A6E3 /* ManiAuthExampleNoPlugins */;
+			targetProxy = B8E38BA92CDB759A00C6A6E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B8E38BB22CDB759A00C6A6E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE920F4184F0B52952C263F9 /* Pods-ManiAuthExampleNoPlugins.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLMJ72SV62;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/myid\"",
+					"\"${PODS_ROOT}/Flutter\"",
+					"\"${PODS_ROOT}/MyIdSDK\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/MyIdSDK\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ManiAuthExampleNoPlugins/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ManiAuthExampleNoPlugins;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ManiAuthExampleNoPlugins/ManiAuthExampleNoPlugins-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8E38BB32CDB759A00C6A6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57A519428315847A4CEC2ACE /* Pods-ManiAuthExampleNoPlugins.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLMJ72SV62;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/myid\"",
+					"\"${PODS_ROOT}/Flutter\"",
+					"\"${PODS_ROOT}/MyIdSDK\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/MyIdSDK\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ManiAuthExampleNoPlugins/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ManiAuthExampleNoPlugins;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ManiAuthExampleNoPlugins/ManiAuthExampleNoPlugins-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B8E38BB42CDB759A00C6A6E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8E38BB52CDB759A00C6A6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8E38BB72CDB759A00C6A6E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLMJ72SV62;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ManiAuthExampleNoPluginsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ManiAuthExampleNoPlugins.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ManiAuthExampleNoPlugins";
+			};
+			name = Debug;
+		};
+		B8E38BB82CDB759A00C6A6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLMJ72SV62;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ManiAuthExampleNoPluginsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ManiAuthExampleNoPlugins.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ManiAuthExampleNoPlugins";
+			};
+			name = Release;
+		};
+		B8E38BBA2CDB759A00C6A6E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLMJ72SV62;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ManiAuthExampleNoPluginsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ManiAuthExampleNoPlugins;
+			};
+			name = Debug;
+		};
+		B8E38BBB2CDB759A00C6A6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLMJ72SV62;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ManiAuthExampleNoPluginsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ManiAuthExampleNoPlugins;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8E38B832CDB759800C6A6E3 /* Build configuration list for PBXProject "ManiAuthExampleNoPlugins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E38BB42CDB759A00C6A6E3 /* Debug */,
+				B8E38BB52CDB759A00C6A6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8E38BB12CDB759A00C6A6E3 /* Build configuration list for PBXNativeTarget "ManiAuthExampleNoPlugins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E38BB22CDB759A00C6A6E3 /* Debug */,
+				B8E38BB32CDB759A00C6A6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8E38BB62CDB759A00C6A6E3 /* Build configuration list for PBXNativeTarget "ManiAuthExampleNoPluginsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E38BB72CDB759A00C6A6E3 /* Debug */,
+				B8E38BB82CDB759A00C6A6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8E38BB92CDB759A00C6A6E3 /* Build configuration list for PBXNativeTarget "ManiAuthExampleNoPluginsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E38BBA2CDB759A00C6A6E3 /* Debug */,
+				B8E38BBB2CDB759A00C6A6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8E38B802CDB759800C6A6E3 /* Project object */;
+}

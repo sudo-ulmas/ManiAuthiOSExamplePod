@@ -1,0 +1,34 @@
+{
+  "name": "myid",
+  "version": "1.1.2",
+  "summary": "MyID flutter plugin.",
+  "description": "A new Flutter plugin.",
+  "homepage": "https://pub.dev/packages/myid",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "MyID": "https://myid.uz/"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "dependencies": {
+    "Flutter": [
+
+    ],
+    "MyIdSDK": [
+      "2.3.3"
+    ]
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES",
+    "VALID_ARCHS[sdk=iphonesimulator*]": "x86_64"
+  },
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
+}
