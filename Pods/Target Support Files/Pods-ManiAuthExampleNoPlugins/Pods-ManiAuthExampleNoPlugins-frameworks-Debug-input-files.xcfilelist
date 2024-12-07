@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-ManiAuthExampleNoPlugins/Pods-ManiAuthExampleNoPlugins-frameworks.sh
+${BUILT_PRODUCTS_DIR}/myid/myid.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/App/App.framework/App
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework/Flutter
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MyIdSDK/MyIdSDK.framework/MyIdSDK

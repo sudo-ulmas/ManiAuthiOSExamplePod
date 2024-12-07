@@ -57,15 +57,11 @@
 		};
 		B8E38BA12CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = ManiAuthExampleNoPluginsTests;
 			sourceTree = "<group>";
 		};
 		B8E38BAB2CDB759A00C6A6E3 /* ManiAuthExampleNoPluginsUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = ManiAuthExampleNoPluginsUITests;
 			sourceTree = "<group>";
 		};
