@@ -1,0 +1,17 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant" "${PODS_CONFIGURATION_BUILD_DIR}/myid" "${PODS_ROOT}/App" "${PODS_ROOT}/Flutter" "${PODS_ROOT}/MyIdSDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/App" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter" "${PODS_XCFRAMEWORKS_BUILD_DIR}/MyIdSDK"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/myid/myid.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/myid/myid.framework/Headers" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/myid"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "App" -framework "Flutter" -framework "FlutterPluginRegistrant" -framework "MyIdSDK" -framework "myid"
+OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/App" "-F${PODS_CONFIGURATION_BUILD_DIR}/Flutter" "-F${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant" "-F${PODS_CONFIGURATION_BUILD_DIR}/MyIdSDK" "-F${PODS_CONFIGURATION_BUILD_DIR}/myid"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
