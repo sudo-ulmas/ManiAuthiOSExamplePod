@@ -92,12 +92,14 @@ static id GetNullableObjectAtIndex(NSArray<id> *array, NSInteger key) {
 + (instancetype)makeWithPaymentSystemId:(nullable NSString *)paymentSystemId
     locale:(nullable NSString *)locale
     pinfl:(nullable NSString *)pinfl
+    phoneNumber:(nullable NSString *)phoneNumber
     environment:(nullable ManiEnvironmentBox *)environment
     residentType:(nullable ManiResidentTypeBox *)residentType {
   HostInfo* pigeonResult = [[HostInfo alloc] init];
   pigeonResult.paymentSystemId = paymentSystemId;
   pigeonResult.locale = locale;
   pigeonResult.pinfl = pinfl;
+  pigeonResult.phoneNumber = phoneNumber;
   pigeonResult.environment = environment;
   pigeonResult.residentType = residentType;
   return pigeonResult;
@@ -107,8 +109,9 @@ static id GetNullableObjectAtIndex(NSArray<id> *array, NSInteger key) {
   pigeonResult.paymentSystemId = GetNullableObjectAtIndex(list, 0);
   pigeonResult.locale = GetNullableObjectAtIndex(list, 1);
   pigeonResult.pinfl = GetNullableObjectAtIndex(list, 2);
-  pigeonResult.environment = GetNullableObjectAtIndex(list, 3);
-  pigeonResult.residentType = GetNullableObjectAtIndex(list, 4);
+  pigeonResult.phoneNumber = GetNullableObjectAtIndex(list, 3);
+  pigeonResult.environment = GetNullableObjectAtIndex(list, 4);
+  pigeonResult.residentType = GetNullableObjectAtIndex(list, 5);
   return pigeonResult;
 }
 + (nullable HostInfo *)nullableFromList:(NSArray<id> *)list {
@@ -119,6 +122,7 @@ static id GetNullableObjectAtIndex(NSArray<id> *array, NSInteger key) {
     self.paymentSystemId ?: [NSNull null],
     self.locale ?: [NSNull null],
     self.pinfl ?: [NSNull null],
+    self.phoneNumber ?: [NSNull null],
     self.environment ?: [NSNull null],
     self.residentType ?: [NSNull null],
   ];

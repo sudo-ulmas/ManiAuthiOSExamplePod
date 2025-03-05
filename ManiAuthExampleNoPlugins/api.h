@@ -46,11 +46,13 @@ typedef NS_ENUM(NSUInteger, ManiResidentType) {
 + (instancetype)makeWithPaymentSystemId:(nullable NSString *)paymentSystemId
     locale:(nullable NSString *)locale
     pinfl:(nullable NSString *)pinfl
+    phoneNumber:(nullable NSString *)phoneNumber
     environment:(nullable ManiEnvironmentBox *)environment
     residentType:(nullable ManiResidentTypeBox *)residentType;
 @property(nonatomic, copy, nullable) NSString * paymentSystemId;
 @property(nonatomic, copy, nullable) NSString * locale;
 @property(nonatomic, copy, nullable) NSString * pinfl;
+@property(nonatomic, copy, nullable) NSString * phoneNumber;
 @property(nonatomic, strong, nullable) ManiEnvironmentBox * environment;
 @property(nonatomic, strong, nullable) ManiResidentTypeBox * residentType;
 @end
