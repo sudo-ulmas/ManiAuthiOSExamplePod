@@ -1,6 +1,0 @@
-framework module Pods_ManiAuthExampleNoPlugins {
-  umbrella header "Pods-ManiAuthExampleNoPlugins-umbrella.h"
-
-  export *
-  module * { export * }
-}
