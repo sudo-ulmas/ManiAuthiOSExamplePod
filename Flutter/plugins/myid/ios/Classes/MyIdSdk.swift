@@ -3,62 +3,97 @@ import MyIdSDK
 
 public class AppearancePublic: NSObject {
 
-    public let primaryColor: UIColor?
-    public let errorColor: UIColor?
-    public let primaryButtonColor: UIColor?
-    public let primaryButtonColorDisabled: UIColor?
-    public let primaryButtonTextColor: UIColor?
-    public let primaryButtonTextColorDisabled: UIColor?
+    public let colorPrimary: UIColor?
+    public let colorOnPrimary: UIColor?
+    public let colorError: UIColor?
+    public let colorOnError: UIColor?
+    public let colorOutline: UIColor?
+    public let colorDivider: UIColor?
+    public let colorSuccess: UIColor?
+    public let colorButtonContainer: UIColor?
+    public let colorButtonContainerDisabled: UIColor?
+    public let colorButtonContent: UIColor?
+    public let colorButtonContentDisabled: UIColor?
     public let buttonCornerRadius: Int?
     
     public init(
-        primaryColor: UIColor?,
-        errorColor: UIColor?,
-        primaryButtonColor: UIColor?,
-        primaryButtonColorDisabled: UIColor?,
-        primaryButtonTextColor: UIColor?,
-        primaryButtonTextColorDisabled: UIColor?,
+        colorPrimary: UIColor?,
+        colorOnPrimary: UIColor?,
+        colorError: UIColor?,
+        colorOnError: UIColor?,
+        colorOutline: UIColor?,
+        colorDivider: UIColor?,
+        colorSuccess: UIColor?,
+        colorButtonContainer: UIColor?,
+        colorButtonContainerDisabled: UIColor?,
+        colorButtonContent: UIColor?,
+        colorButtonContentDisabled: UIColor?,
         buttonCornerRadius: Int?
     ) {
-        self.primaryColor = primaryColor
-        self.errorColor = errorColor
-        self.primaryButtonColor = primaryButtonColor
-        self.primaryButtonColorDisabled = primaryButtonColorDisabled
-        self.primaryButtonTextColor = primaryButtonTextColor
-        self.primaryButtonTextColorDisabled = primaryButtonTextColorDisabled
+        self.colorPrimary = colorPrimary
+        self.colorOnPrimary = colorOnPrimary
+        self.colorError = colorError
+        self.colorOnError = colorOnError
+        self.colorOutline = colorOutline
+        self.colorDivider = colorDivider
+        self.colorSuccess = colorSuccess
+        self.colorButtonContainer = colorButtonContainer
+        self.colorButtonContainerDisabled = colorButtonContainerDisabled
+        self.colorButtonContent = colorButtonContent
+        self.colorButtonContentDisabled = colorButtonContentDisabled
         self.buttonCornerRadius = buttonCornerRadius
     }
 }
 
 public func loadAppearance(config: NSDictionary) throws -> AppearancePublic? {
     if let jsonResult = config as? Dictionary<String, AnyObject> {
-        let primaryColor = (jsonResult["primaryColor"] == nil)
-                ? nil : UIColor.from(hex: jsonResult["primaryColor"] as! String)
+        let colorPrimary = (jsonResult["colorPrimary"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorPrimary"] as! String)
         
-        let errorColor = (jsonResult["errorColor"] == nil)
-                ? nil : UIColor.from(hex: jsonResult["errorColor"] as! String)
+        let colorOnPrimary = (jsonResult["colorOnPrimary"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorOnPrimary"] as! String)
         
-        let primaryButtonColor = (jsonResult["primaryButtonColor"] == nil)
-                ? nil : UIColor.from(hex: jsonResult["primaryButtonColor"] as! String)
+        let colorError = (jsonResult["colorError"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorError"] as! String)
         
-        let primaryButtonColorDisabled = (jsonResult["primaryButtonColorDisabled"] == nil)
-                ? nil : UIColor.from(hex: jsonResult["primaryButtonColorDisabled"] as! String)
+        let colorOnError = (jsonResult["colorOnError"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorOnError"] as! String)
         
-        let primaryButtonTextColor = (jsonResult["primaryButtonTextColor"] == nil)
-                ? nil : UIColor.from(hex: jsonResult["primaryButtonTextColor"] as! String)
+        let colorOutline = (jsonResult["colorOutline"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorOutline"] as! String)
         
-        let primaryButtonTextColorDisabled = (jsonResult["primaryButtonTextColorDisabled"] == nil)
-                ? nil : UIColor.from(hex: jsonResult["primaryButtonTextColorDisabled"] as! String)
+        let colorDivider = (jsonResult["colorDivider"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorDivider"] as! String)
+        
+        let colorSuccess = (jsonResult["colorSuccess"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorSuccess"] as! String)
+        
+        let colorButtonContainer = (jsonResult["colorButtonContainer"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorButtonContainer"] as! String)
+        
+        let colorButtonContainerDisabled = (jsonResult["colorButtonContainerDisabled"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorButtonContainerDisabled"] as! String)
+        
+        let colorButtonContent = (jsonResult["colorButtonContent"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorButtonContent"] as! String)
+        
+        let colorButtonContentDisabled = (jsonResult["colorButtonContentDisabled"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorButtonContentDisabled"] as! String)
         
         let buttonCornerRadius: Int? = (jsonResult["buttonCornerRadius"] == nil) ? nil : 8
                         
         let appearancePublic = AppearancePublic(
-            primaryColor: primaryColor,
-            errorColor: errorColor,
-            primaryButtonColor: primaryButtonColor,
-            primaryButtonColorDisabled: primaryButtonColorDisabled,
-            primaryButtonTextColor: primaryButtonTextColor,
-            primaryButtonTextColorDisabled: primaryButtonTextColorDisabled,
+            colorPrimary: colorPrimary,
+            colorOnPrimary: colorOnPrimary,
+            colorError: colorError,
+            colorOnError: colorOnError,
+            colorOutline: colorOutline,
+            colorDivider: colorDivider,
+            colorSuccess: colorSuccess,
+            colorButtonContainer: colorButtonContainer,
+            colorButtonContainerDisabled: colorButtonContainerDisabled,
+            colorButtonContent: colorButtonContent,
+            colorButtonContentDisabled: colorButtonContentDisabled,
             buttonCornerRadius: buttonCornerRadius
         )
         return appearancePublic
@@ -70,12 +105,17 @@ public func loadAppearance(config: NSDictionary) throws -> AppearancePublic? {
 public func loadAppearanceFromConfig(appearancePublic: AppearancePublic?) throws -> MyIdAppearance {
     if let appearancePublic = appearancePublic {
         let appearance = MyIdAppearance()
-        appearance.primaryColor = appearancePublic.primaryColor
-        appearance.errorColor = appearancePublic.errorColor
-        appearance.primaryButtonColor = appearancePublic.primaryButtonColor
-        appearance.primaryButtonColorDisabled = appearancePublic.primaryButtonColorDisabled
-        appearance.primaryButtonTextColor = appearancePublic.primaryButtonTextColor
-        appearance.primaryButtonTextColorDisabled = appearancePublic.primaryButtonTextColorDisabled
+        appearance.colorPrimary = appearancePublic.colorPrimary
+        appearance.colorOnPrimary = appearancePublic.colorOnPrimary
+        appearance.colorError = appearancePublic.colorError
+        appearance.colorOnError = appearancePublic.colorOnError
+        appearance.colorOutline = appearancePublic.colorOutline
+        appearance.colorDivider = appearancePublic.colorDivider
+        appearance.colorSuccess = appearancePublic.colorSuccess
+        appearance.colorButtonContainer = appearancePublic.colorButtonContainer
+        appearance.colorButtonContainerDisabled = appearancePublic.colorButtonContainerDisabled
+        appearance.colorButtonContent = appearancePublic.colorButtonContent
+        appearance.colorButtonContentDisabled = appearancePublic.colorButtonContentDisabled
         
         if let buttonCornerRadius = appearancePublic.buttonCornerRadius {
             appearance.buttonCornerRadius = Float(buttonCornerRadius)
@@ -106,54 +146,46 @@ public func buildMyIdConfig(
     let threshold = config["threshold"] as? Double ?? 0.55
     let distance = config["distance"] as? Double ?? 0.60
     
-    let buildModeKey = config["buildMode"] as? String ?? ""
-    var buildMode = MyIdBuildMode.PRODUCTION
-    if (buildModeKey == "DEBUG") {
-        buildMode = MyIdBuildMode.DEBUG
+    let environmentKey = config["environment"] as? String ?? ""
+    var environment = MyIdEnvironment.production
+    if (environmentKey == "DEBUG") {
+        environment = MyIdEnvironment.debug
     }
     
     let entryTypeKey = config["entryType"] as? String ?? ""
-    var entryType = MyIdEntryType.AUTH
+    var entryType = MyIdEntryType.identification
     if (entryTypeKey == "FACE") {
-        entryType = MyIdEntryType.FACE
+        entryType = MyIdEntryType.faceDetection
     }
     
     let residencyKey = config["residency"] as? String ?? ""
-    var residency = MyIdResidency.RESIDENT
+    var residency = MyIdResidency.resident
     if (residencyKey == "USER_DEFINED") {
-        residency = MyIdResidency.USER_DEFINED
+        residency = MyIdResidency.userDefined
     } else if (residencyKey == "NON_RESIDENT") {
-        residency = MyIdResidency.NON_RESIDENT
+        residency = MyIdResidency.nonResident
     }
     
     let localeKey = config["locale"] as? String ?? ""
-    var locale = MyIdLocale.UZ
+    var locale = MyIdLocale.uzbek
     if (localeKey == "RUSSIAN") {
-        locale = MyIdLocale.RU
+        locale = MyIdLocale.russian
     } else if (localeKey == "ENGLISH") {
-        locale = MyIdLocale.EN
+        locale = MyIdLocale.english
     }
     
     let cameraShapeKey = config["cameraShape"] as? String ?? ""
-    var cameraShape = MyIdCameraShape.CIRCLE
+    var cameraShape = MyIdCameraShape.circle
     if (cameraShapeKey == "ELLIPSE") {
-        cameraShape = MyIdCameraShape.ELLIPSE
+        cameraShape = MyIdCameraShape.ellipse
     }
 
     let cameraSelectorKey = config["cameraSelector"] as? String ?? ""
-    var cameraSelector = MyIdCameraSelector.FRONT
+    var cameraSelector = MyIdCameraSelector.front
     if (cameraSelectorKey == "BACK") {
-        cameraSelector = MyIdCameraSelector.BACK
+        cameraSelector = MyIdCameraSelector.back
     }
     
-    let resolutionKey = config["resolution"] as? String ?? ""
-    var resolution = MyIdResolution.RESOLUTION_480
-    if (resolutionKey == "RESOLUTION_720") {
-        resolution = MyIdResolution.RESOLUTION_720
-    }
-    
-    let withPhoto = config["withPhoto"] as? Bool ?? false
-
     let organizationDetailsDict = config["organizationDetails"] as? NSDictionary
 
     let logo = (organizationDetailsDict?["logo"] == nil) ? nil : UIImage(named: organizationDetailsDict?["logo"] as! String)
@@ -167,21 +199,19 @@ public func buildMyIdConfig(
     config.clientHashId = clientHashId
     config.passportData = passportData
     config.dateOfBirth = dateOfBirth
-    config.minAge = minAge
     config.sdkHash = sdkHash
+    config.minAge = minAge
     config.externalId = externalId
     config.threshold = Float(threshold)
-    config.buildMode = buildMode
-    config.entryType = entryType
+    config.distance = Float(distance)
     config.residency = residency
+    config.environment = environment
+    config.entryType = entryType
     config.locale = locale
     config.cameraShape = cameraShape
     config.cameraSelector = cameraSelector
-    config.resolution = resolution
-    config.withPhoto = withPhoto
     config.appearance = appearance
     config.organizationDetails = organizationDetails
-    config.distance = Float(distance)
 
     return config
 }

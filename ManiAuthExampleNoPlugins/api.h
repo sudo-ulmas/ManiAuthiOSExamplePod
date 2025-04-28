@@ -32,6 +32,17 @@ typedef NS_ENUM(NSUInteger, ManiResidentType) {
 - (instancetype)initWithValue:(ManiResidentType)value;
 @end
 
+typedef NS_ENUM(NSUInteger, DesignVariant) {
+  DesignVariantMani = 0,
+  DesignVariantSmartbank = 1,
+};
+
+/// Wrapper for DesignVariant to allow for nullability.
+@interface DesignVariantBox : NSObject
+@property(nonatomic, assign) DesignVariant value;
+- (instancetype)initWithValue:(DesignVariant)value;
+@end
+
 @class Token;
 @class HostInfo;
 
@@ -48,13 +59,15 @@ typedef NS_ENUM(NSUInteger, ManiResidentType) {
     pinfl:(nullable NSString *)pinfl
     phoneNumber:(nullable NSString *)phoneNumber
     environment:(nullable ManiEnvironmentBox *)environment
-    residentType:(nullable ManiResidentTypeBox *)residentType;
+    residentType:(nullable ManiResidentTypeBox *)residentType
+    designVariant:(nullable DesignVariantBox *)designVariant;
 @property(nonatomic, copy, nullable) NSString * paymentSystemId;
 @property(nonatomic, copy, nullable) NSString * locale;
 @property(nonatomic, copy, nullable) NSString * pinfl;
 @property(nonatomic, copy, nullable) NSString * phoneNumber;
 @property(nonatomic, strong, nullable) ManiEnvironmentBox * environment;
 @property(nonatomic, strong, nullable) ManiResidentTypeBox * residentType;
+@property(nonatomic, strong, nullable) DesignVariantBox * designVariant;
 @end
 
 /// The codec used by all APIs.
