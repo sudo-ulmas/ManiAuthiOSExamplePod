@@ -5,8 +5,8 @@ require_relative 'Flutter/mani_plugins_installer'
 
 target 'ManiAuthExampleNoPlugins' do
   use_frameworks!
-  pod 'Flutter', :podspec => 'Flutter/Debug/Flutter.podspec'
-  pod 'App', :podspec => 'Flutter/Debug/App.podspec'
+  pod 'Flutter', :podspec => 'Flutter/Release/Flutter.podspec'
+  pod 'App', :podspec => 'Flutter/Release/App.podspec'
   use_flutter_modules!
 
   post_install do |installer|

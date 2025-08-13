@@ -14,6 +14,7 @@ public class AppearancePublic: NSObject {
     public let colorButtonContainerDisabled: UIColor?
     public let colorButtonContent: UIColor?
     public let colorButtonContentDisabled: UIColor?
+    public let colorScanButtonContainer: UIColor?
     public let buttonCornerRadius: Int?
     
     public init(
@@ -28,6 +29,7 @@ public class AppearancePublic: NSObject {
         colorButtonContainerDisabled: UIColor?,
         colorButtonContent: UIColor?,
         colorButtonContentDisabled: UIColor?,
+        colorScanButtonContainer: UIColor?,
         buttonCornerRadius: Int?
     ) {
         self.colorPrimary = colorPrimary
@@ -41,6 +43,7 @@ public class AppearancePublic: NSObject {
         self.colorButtonContainerDisabled = colorButtonContainerDisabled
         self.colorButtonContent = colorButtonContent
         self.colorButtonContentDisabled = colorButtonContentDisabled
+        self.colorScanButtonContainer = colorScanButtonContainer
         self.buttonCornerRadius = buttonCornerRadius
     }
 }
@@ -79,7 +82,10 @@ public func loadAppearance(config: NSDictionary) throws -> AppearancePublic? {
         
         let colorButtonContentDisabled = (jsonResult["colorButtonContentDisabled"] == nil)
                 ? nil : UIColor.from(hex: jsonResult["colorButtonContentDisabled"] as! String)
-        
+
+        let colorScanButtonContainer = (jsonResult["colorScanButtonContainer"] == nil)
+                ? nil : UIColor.from(hex: jsonResult["colorScanButtonContainer"] as! String)
+
         let buttonCornerRadius: Int? = (jsonResult["buttonCornerRadius"] == nil) ? nil : 8
                         
         let appearancePublic = AppearancePublic(
@@ -94,6 +100,7 @@ public func loadAppearance(config: NSDictionary) throws -> AppearancePublic? {
             colorButtonContainerDisabled: colorButtonContainerDisabled,
             colorButtonContent: colorButtonContent,
             colorButtonContentDisabled: colorButtonContentDisabled,
+            colorScanButtonContainer: colorScanButtonContainer,
             buttonCornerRadius: buttonCornerRadius
         )
         return appearancePublic
@@ -116,7 +123,8 @@ public func loadAppearanceFromConfig(appearancePublic: AppearancePublic?) throws
         appearance.colorButtonContainerDisabled = appearancePublic.colorButtonContainerDisabled
         appearance.colorButtonContent = appearancePublic.colorButtonContent
         appearance.colorButtonContentDisabled = appearancePublic.colorButtonContentDisabled
-        
+        appearance.colorScanButtonContainer = appearancePublic.colorScanButtonContainer
+
         if let buttonCornerRadius = appearancePublic.buttonCornerRadius {
             appearance.buttonCornerRadius = Float(buttonCornerRadius)
         }
@@ -154,7 +162,7 @@ public func buildMyIdConfig(
     
     let entryTypeKey = config["entryType"] as? String ?? ""
     var entryType = MyIdEntryType.identification
-    if (entryTypeKey == "FACE") {
+    if (entryTypeKey == "FACE_DETECTION") {
         entryType = MyIdEntryType.faceDetection
     }
     
@@ -299,10 +307,5 @@ extension UIColor {
 
         return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
     }
-}
-
-extension MyIdAppearance {
-
-    static let `default` = MyIdAppearance()
 }
 

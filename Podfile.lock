@@ -1,0 +1,41 @@
+PODS:
+  - App (0.8.7)
+  - Flutter (3.29.200)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+    - myid
+  - myid (2.4.4):
+    - Flutter
+    - MyIdSDK (= 2.4.4)
+  - MyIdSDK (2.4.4)
+
+DEPENDENCIES:
+  - App (from `Flutter/Release/App.podspec`)
+  - Flutter (from `Flutter/Release/Flutter.podspec`)
+  - FlutterPluginRegistrant (from `/Users/abdullah/ManiSDK/examples/ManiAuthExampleNoPlugins/Flutter/plugins/FlutterPluginRegistrant`)
+  - myid (from `Flutter/plugins/myid/ios`)
+
+SPEC REPOS:
+  trunk:
+    - MyIdSDK
+
+EXTERNAL SOURCES:
+  App:
+    :podspec: Flutter/Release/App.podspec
+  Flutter:
+    :podspec: Flutter/Release/Flutter.podspec
+  FlutterPluginRegistrant:
+    :path: "/Users/abdullah/ManiSDK/examples/ManiAuthExampleNoPlugins/Flutter/plugins/FlutterPluginRegistrant"
+  myid:
+    :path: Flutter/plugins/myid/ios
+
+SPEC CHECKSUMS:
+  App: bb7447965bdbf5a3d85c94a86a046ae84bb6c741
+  Flutter: 71bd6ecd290566eecfaabac90d77f730430d56a7
+  FlutterPluginRegistrant: 12f7c441e526e4c193e920a2ad40f80d426449f8
+  myid: 9164c01daa808283e206d1dcd32635c234ffc7b9
+  MyIdSDK: 5b745166219a65fcb6c096b04347a187be026fa8
+
+PODFILE CHECKSUM: 34d49e4b9a1835252687bdcb127915c0afbb4ca5
+
+COCOAPODS: 1.16.2

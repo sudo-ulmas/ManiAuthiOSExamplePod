@@ -14,9 +14,9 @@ class ViewController: UIViewController, HostAppApi {
    
     
     private var token: Token = Token()
-    private var hostInfo: HostInfo = HostInfo.make(withPaymentSystemId:"your-payment-system-id", locale: "ru", pinfl: "31308977420022", phoneNumber: "+998917940244",environment: ManiEnvironmentBox(value: ManiEnvironment.dev), residentType: ManiResidentTypeBox(value: ManiResidentType.resident), designVariant: DesignVariantBox(value: DesignVariant.mani))
+    private var hostInfo: HostInfo = HostInfo.make(withPaymentSystemId: "", locale: "ru", pinfl: "31308977420022", phoneNumber: "917940244",environment: ManiEnvironmentBox(value: ManiEnvironment.dev), residentType: ManiResidentTypeBox(value: ManiResidentType.resident), designVariant: DesignVariantBox(value: DesignVariant.smartbank))
     private var api: ManiAuthApi!
-    var pluginsRegistered: Bool = false
+    private var currentFlutterEngine: FlutterEngine?
  
     
     lazy var button: UIButton! = {
@@ -38,7 +38,7 @@ class ViewController: UIViewController, HostAppApi {
     func authSuccessToken(_ token: Token, error: AutoreleasingUnsafeMutablePointer<FlutterError?>) {
         self.token = token
         text.text = self.token.accessToken
-        self.navigationController?.popViewController(animated: true)
+//        self.navigationController?.popViewController(animated: true)
     }
     
  
@@ -46,10 +46,6 @@ class ViewController: UIViewController, HostAppApi {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let flutterEngine = appDelegate.flutterEngine
-        SetUpHostAppApi(flutterEngine.binaryMessenger, self)
-        api = ManiAuthApi.init(binaryMessenger: flutterEngine.binaryMessenger)
         self.button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         self.button.backgroundColor = .red
         self.view.addSubview(button)
@@ -68,31 +64,37 @@ class ViewController: UIViewController, HostAppApi {
     }
     
     @objc private func didTapButton() {
+        // Clean up previous engine if it exists
+        currentFlutterEngine?.destroyContext()
+        currentFlutterEngine = nil
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        registerFlutterPluginsIfNeeded(engine: appDelegate.flutterEngine)
+        let flutterEngine = appDelegate.createNewFlutterEngine()
+        currentFlutterEngine = flutterEngine
+        
+        SetUpHostAppApi(flutterEngine.binaryMessenger, self)
+        api = ManiAuthApi.init(binaryMessenger: flutterEngine.binaryMessenger)
+        
+        registerFlutterPluginsIfNeeded(engine: flutterEngine)
         let flutterViewController = FlutterViewController(
-            engine: appDelegate.flutterEngine, nibName: nil, bundle: nil)
+            engine: flutterEngine, nibName: nil, bundle: nil)
      
         api.send(hostInfo) { (error) in
           if let error = error {
             print(error)
           }
         }
-        
-      
 
         self.navigationController?.pushViewController(flutterViewController, animated: true)
 
     }
     
     func registerFlutterPluginsIfNeeded(engine: FlutterEngine) {
-
-        if !pluginsRegistered {
-            GeneratedPluginRegistrant.register(with: engine)
-            pluginsRegistered = true  // Mark plugins as registered
-        } else {
-            print("Plugins are already registered, skipping registration.")
-        }
+        GeneratedPluginRegistrant.register(with: engine)
+    }
+    
+    deinit {
+        currentFlutterEngine?.destroyContext()
     }
   
 
